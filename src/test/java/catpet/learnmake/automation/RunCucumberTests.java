@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty", "html:target/cucumber", "junit:target/cucumber.xml"},
+        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json", "junit:target/cucumber.xml"},
         features = "src/test/resources/catpet/learnmake/automation",
         glue = {"catpet.learnmake.automation.stepdefs"})
 public class RunCucumberTests {
