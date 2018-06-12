@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class GooglePage extends AbstractPage {
+public class DuckDuckGoPage extends AbstractPage {
 
-    private static final String PAGE_HOME_URL = "https://www.google.com/";
+    private static final String PAGE_HOME_URL = "https://www.duckduckgo.com/";
     private static final By BY_SEARCH_FIELD = By.name("q");
 
-    public GooglePage(WebDriver driver) {
+    public DuckDuckGoPage(WebDriver driver) {
         super(driver);
     }
 

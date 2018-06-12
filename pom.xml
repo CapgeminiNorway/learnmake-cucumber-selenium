@@ -22,6 +22,9 @@
         <versions.webdrivermanager>2.2.2</versions.webdrivermanager>
         <versions.assertj_core>3.10.0</versions.assertj_core>
 
+        <versions.guava>25.1-jre</versions.guava>
+        <versions.commons_lang3>3.7</versions.commons_lang3>
+
     </properties>
 
     <dependencies>
@@ -95,6 +98,17 @@
             <artifactId>assertj-core</artifactId>
             <version>${versions.assertj_core}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${versions.guava}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${versions.commons_lang3}</version>
         </dependency>
 
     </dependencies>

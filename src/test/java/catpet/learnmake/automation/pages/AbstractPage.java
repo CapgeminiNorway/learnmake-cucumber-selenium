@@ -19,4 +19,7 @@ public abstract class AbstractPage {
         return new WebDriverWait(driver, timeoutSeconds);
     }
 
+    public void navigateToHomePage() {}
+    public void enterSearchPhrase(String phrase) {}
+    public boolean pageTitleContains(String phrase) {return true;}
 }
