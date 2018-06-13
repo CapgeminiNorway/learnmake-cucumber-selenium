@@ -106,7 +106,7 @@ public class SharedContextSteps {
         for (RemoteWebDriver webDriver:webDrivers.values()) {
             webDriver.quit();
             try {
-                if (webDriver != null && webDriver.getSessionId() != null) {
+                if (webDriver.getSessionId() != null) {
                     Alert alert = webDriver.switchTo().alert();
                     if (alert != null ) {
                         alert.accept();
@@ -118,7 +118,7 @@ public class SharedContextSteps {
                 System.out.println(SharedContextSteps.class.getSimpleName()+" | while forcing quit: " + ex);
             }
             finally {
-                if (webDriver != null && webDriver.getSessionId() != null) {
+                if (webDriver.getSessionId() != null) {
                     webDriver.quit();
                 }
             }
