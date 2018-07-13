@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>catpet.learnmake.automation</groupId>
-    <artifactId>catpet-automation</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>learnmake.automation</groupId>
+    <artifactId>using-automation</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -15,17 +15,34 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.plugin>3.7.0</maven.compiler.plugin>
 
         <versions.cucumber>3.0.2</versions.cucumber>
         <versions.junit>4.12</versions.junit>
         <versions.selenium>3.12.0</versions.selenium>
-        <versions.webdrivermanager>2.2.2</versions.webdrivermanager>
+        <versions.webdrivermanager>2.2.4</versions.webdrivermanager>
         <versions.assertj_core>3.10.0</versions.assertj_core>
 
         <versions.guava>25.1-jre</versions.guava>
         <versions.commons_lang3>3.7</versions.commons_lang3>
 
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin}</version>
+                <configuration>
+                    <encoding>${project.reporting.outputEncoding}</encoding>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <compilerArgument>-Werror</compilerArgument>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 
@@ -121,21 +138,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <compilerArgument>-Werror</compilerArgument>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
