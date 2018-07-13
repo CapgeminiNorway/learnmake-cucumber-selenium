@@ -32,7 +32,9 @@ Getting up and running for your dev-env is as easy as counting 1 to 4 :-)
 
     ```
     mvn clean test -DisLocal=true -DisHeadless=false
-    ``` 
+    ```  
+    to see test results are generated, just open this `using-cucumber-selenium/target/cucumber/index.html` in your browser  
+        
     _(optional)_ when running inside Jenkins environment, you must append `-DGITHUB_TOKEN=...public_access_token...`  
     _(optional)_ if you want to force using custom drivers, then just append:     
     `-Dwebdriver.gecko.driver=wdm_local/geckodriver -Dwebdriver.chrome.driver=wdm_local/chromedriver`  
