@@ -23,8 +23,8 @@ Getting up and running for your dev-env is as easy as counting 1 to 4 :-)
 2. Clone this repo and verify compile  
 
     ```
-    git clone https://github.com/CapgeminiNorway/using-cucumber-selenium  
-    cd path/to/using-cucumber-selenium  
+    git clone https://github.com/CapgeminiNorway/learnmake-cucumber-selenium  
+    cd path/to/learnmake-cucumber-selenium  
     mvn clean compile  
     ```
 
@@ -33,7 +33,7 @@ Getting up and running for your dev-env is as easy as counting 1 to 4 :-)
     ```
     mvn clean test -DisLocal=true -DisHeadless=false
     ```  
-    to see test results are generated, just open this `using-cucumber-selenium/target/cucumber/index.html` in your browser  
+    to see test results are generated, just open this `learnmake-cucumber-selenium/target/cucumber/index.html` in your browser  
       
     _optional params:_    
     - when running inside Jenkins environment, you must append `-DGITHUB_TOKEN=...public_access_token...`  
